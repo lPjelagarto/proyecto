@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CineFly - Inicio de sesión</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="login-container">
+        <div class="login-card">
+            <div class="login-brand">
+                <h1>CineFly</h1>
+                <p>Bienvenido de nuevo</p>
+            </div>
 
-        <h1>CineFly</h1>
-        <h2>Iniciar sesión</h2>
+            <h2>Iniciar sesión</h2>
 
-        <form>
+            <form>
+                <label>
+                    Usuario
+                    <input type="text" placeholder="Nombre de usuario" required>
+                </label>
 
-            <input type="text" placeholder="Nombre de usuario">
-            <input type="password" placeholder="Contraseña">
-            <br><br>
+                <label>
+                    Contraseña
+                    <input type="password" placeholder="Contraseña" required>
+                </label>
 
-            <a href="principal.html">
-                <button type="button">Iniciar sesión</button></a>
-            </a>
-            <br><br>
-
-            <a href="registro.html">
-                <button type="button">Registrarse</button>
-            </a>
-
-
-
-        </form>
-
-
-
+                <div class="actions">
+                    <a class="primary-button" href="principal.html">Iniciar sesión</a>
+                    <a class="secondary-button" href="registro.html">Crear cuenta</a>
+                </div>
+            </form>
+        </div>
     </div>
-
 </body>
 
 </html>
