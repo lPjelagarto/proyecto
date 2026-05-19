@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO - CINEFLY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<!--Comentario De Bienvenida y catalogo-->
+<body onload="bienvenida(); cargarPeliculas();">
+    
+    
+    <header>
+        <h1>CINEFLY</h1>
+
+        <!--Interfaz superior derecha-->
+        <nav>
+            <a href="principal.html">INICIO</a>
+            <a href="#">peliculas</a>
+            <a href="#">series</a>
+            <a href="login.html">Cerrar Sesion</a>
+        </nav>
+    </header>
+
+    <h2> ---------CARTELERA--------- </h2>
+    <div class="buscador">
+        <input type="text" id="busqueda" placeholder="Buscar pelicula o serie">
+        <button onclick="buscarPelicula()">Buscar</button>
+    </div>
+        <div id="catalogo" class="catalogo"></div>
+    
+        <div id="infoPelicula"></div>
+  
+</body>
+
+</html>
